@@ -1,4 +1,4 @@
-﻿let firstValue = document.querySelector('.C')
+let firstValue = document.querySelector('.C')
 let secondValue = document.querySelector('.F')
 let converter = document.querySelector('#converter')
 let result = document.querySelector('.result')
@@ -44,7 +44,7 @@ function swap() {
      firstValue.innerHTML = "°F"
      secondValue.innerHTML = "°C"
      document.title = "°F to °C"
-     converter.innerHTML = ""
+     converter.value = ""
      converter.placeholder = '°F'
      result.innerHTML = ""
 
@@ -52,7 +52,7 @@ function swap() {
         firstValue.innerHTML = "°C"
         secondValue.innerHTML = "°F"
         document.title = "°C to °F"
-        converter.innerHTML = ""
+        converter.value = ""
         converter.setAttribute("placeholder",'°C')
         result.innerHTML = ""
     }

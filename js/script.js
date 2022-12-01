@@ -16,7 +16,6 @@ function convert() {
         let celicios = converter.value
         let converted = celicios * 9.5 + 32
         result.innerHTML = converted.toFixed(2) + ' °F'
-        converter.value = ""
         result.style.color = "yellow"
 }       
     }else{
